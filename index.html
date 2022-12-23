@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="src/img/favicon.png" />
+    <link rel="apple-touch-icon" href="src/img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="stylesheet" href="src/css/general.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/queries.css" />
+    <title>BioGenesis &mdash; Check your health right away!</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="header-logo">
+        <img
+          src="src/img/biogenesis-logo.png"
+          alt="BioGenesis Logo"
+          class="logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#examine-section">Self-Examination</a></li>
+          <li><a href="#research-section">Research</a></li>
+          <li><a href="#detection-section">AI Detection</a></li>
+          <li><a href="#donations-section" class="nav-donations">Donate to Baheya</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero-container">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Breast cancer detection, by the click of a button
+            </h1>
+            <p class="hero-description">
+              Whether you or a loved one are worried about developing breast
+              cancer, you can use our free tool to check whether you reall have
+              a breast cancer or not! We hope you don't, but please take
+              caution.
+            </p>
+            <a href="#detection-section" class="btn btn--full margin-right-sm"
+              >Check now</a
+            >
+            <a href="#examine-section" class="btn btn--outline"
+              >Learn more &darr;</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <picture>
+              <source srcset="src/img/hero.png" type="image/png" />
+              <source srcset="src/img/hero-min.pg" type="image/png" />
+
+              <img
+                src="src/img/hero-min.png"
+                class="hero-img"
+                alt="Hero image"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <span class="subheading">Data Supported By</span>
+          <div class="logos">
+            <img src="src/img/logos/baheya.png" alt="Baheya logo" />
+            <img src="src/img/logos/kaggle.png" alt="Kaggle logo" />
+          </div>
+        </div>
+      </section>
+
+      <section id="examine-section" class="section-examine">
+        <div class="container">
+          <span class="subheading">How to self-examine?</span>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 6 simple steps.
+          </h2>
+
+          <div class="grid grid--2-cols">
+            <!-- Step 1 -->
+            <div class="step-text-box">
+              <p class="step-num">01</p>
+              <h3 class="heading-tertiary">
+                Take a good look at your breasts in the mirror.
+              </h3>
+              <p class="step-description">
+                Take a good look at your breasts in the mirror and start by
+                looking for changes in the shape, size or position of your
+                nipples.
+              </p>
+              <p class="step-notes">Do you have any of these symptoms?
+                <ul class = "list">
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Breast or nipple pain</span></li>
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Nipple discharge</span></li>
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Nipple retraction or inversion</span></li>
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Change in size/shape of the breast or asymmetry of the position of the nipples</span></li>
+                </ul>
+              </p>
+            </div>
+            <div class="step-img-box">
+              <img src="src/img/steps/step-1.png" class="step-img" alt="" />
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-img-box">
+              <img src="src/img/steps/step-2.png" class="step-img" alt="" />
+            </div>
+            <div class="step-text-box">
+              <p class="step-num">02</p>
+              <h3 class="heading-tertiary">
+                Raise your arms in the air.
+              </h3>
+              <p class="step-description">After you have checked your nipples, raise your arms in the air, you are going to look for any distoration of your breasts such as dimpling of the skin.
+              </p>
+              <p class="step-notes">Do you have any of these symptoms?</p>
+              <ul class = "list">
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Visible lumps</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Skin dimpling</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Redness</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Swelling</span></li>
+              </ul>
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-text-box">
+              <p class="step-num">03</p>
+              <h3 class="heading-tertiary">
+                It is best to flat when examining your breasts.
+              </h3>
+              <p class="step-description">It is best to flat when examining your breasts, either on your bed, or sofa or even in the bath. This allows your breast tissue to spread out and makes examination much easier.
+              </p>
+              <p class="step-notes">Do you have any of these symptoms?</p>
+              <ul class = "list">
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Palpable breast lump - if present is it hard or soft, smooth or irregular?</span></li>
+              </ul>
+              </p>
+            </div>
+            <div class="step-img-box">
+              <img src="src/img/steps/step-3.png" class="step-img" alt="" />
+            </div>
+
+            <!-- Step 4 -->
+            <div class="step-img-box">
+              <img src="src/img/steps/step-4.png" class="step-img" alt="" />
+            </div>
+            <div class="step-text-box">
+              <p class="step-num">04</p>
+              <h3 class="heading-tertiary">
+                Use firm pressure with flat fingers of your right hand.
+              </h3>
+              <p class="step-description">
+                Then using firm pressure with flat fingers on your right hand press your breast tissue against the underlying chest wall and use your flat fingers press around each quarter of your left breast. Once you have done this then use your fingertips to press around your nipple. If you feel any lump or thickened area then use both of your hands to try and identify if there is a lump present. 
+              </p>
+              <p class="step-notes">Do you have any of these symptoms?
+                <ul class = "list">
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Bleeding from the nipple</span></li>
+                  <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span></span>Breast asymmetry in the terms of the feel of the breast and how lumpy it is</span></li>
+                </ul>
+              </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="step-text-box">
+              <p class="step-num">05</p>
+              <h3 class="heading-tertiary">
+                Repeat step 4.
+              </h3>
+              <p class="step-description">Repeat step 4 but on your right breast and using your left hand.
+              </p>
+              <p class="step-notes">Do you have any of these symptoms?</p>
+              <ul class = "list">
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Lumps</span></li>
+              </ul>
+              </p>
+            </div>
+            <div class="step-img-box">
+              <img src="src/img/steps/step-5.png" class="step-img" alt="" />
+            </div>
+
+            <!-- Step 6 -->
+            <div class="step-img-box">
+              <img src="src/img/steps/step-6.png" class="step-img" alt="" />
+            </div>
+            <div class="step-text-box">
+              <p class="step-num">06</p>
+              <h3 class="heading-tertiary">
+                Examine your left underarm area.
+              </h3>
+              <p class="step-description">Finally, examine your left underarm area  with your right hand, starting as high as possible in your armpit and running your fingers downwards looking for any lumps. Repeat this process on your right underarm using your left hand. 
+              </p>
+              <p class="step-notes">Do you have any of these symptoms?</p>
+              <ul class = "list">
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Palpable breast lump in the armpit</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Swelling of the arm</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>A tender swelling under the arm</span></li>
+                <li class="list-item"><ion-icon class="list-icon" name="checkmark-circle"></ion-icon><span>Lymph node changes</span></li>
+              </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="research-section"
+        class="section-research grid grid--2-cols"
+      >
+        <div class="comments-container">
+          <span class="subheading">Research</span>
+          <h2 class="heading-secondary">What we have done so far?</h2>
+
+          <div class="comments">
+            <figure class="comment">
+              <div class="team-container">
+                <div class="team-faces">
+                  <img
+                    src="src/img/team/omar.jpg"
+                    alt="Omar Nabil photo"
+                  />
+                  <img
+                    src="src/img/team/emad.jpg"
+                    alt="Omar Emad photo"
+                  />
+                  <img
+                  src="src/img/team/fatma.jpg"
+                  alt="Fatma Ehab photo"
+                />
+                </div>
+              </div>
+              <blockquote class="comment-text">We started by detecting the problem which was the breast cancer. We then started to read literature about detecting breast cancer using AI.</blockquote>
+              <p class="comment-name">&mdash; Omar Nabil</p>
+              <p class="comment-name">&mdash; Omar Emad</p>
+              <p class="comment-name">&mdash; Fatma Ehab</p>
+            </figure>
+
+            <figure class="comment">
+              <div class="team-container">
+                <div class="team-faces">
+                  <img
+                    src="src/img/team/abdelrahman.jpg"
+                    alt="Abdelrahman Emad photo"
+                  />
+                  <img
+                  src="src/img/team/ziad.jpg"
+                  alt="Ziad Ahmed photo"
+                  />
+                  <img
+                    src="src/img/team/ibrahim.jpg"
+                    alt="Mohmaed Ibrahimphoto"
+                  />
+                </div>
+              </div>
+              <blockquote class="comment-text">We then started to use maths to make modelling of neural networks, either for CNNs, forward propagation, or backpropagation. They are all essential tools that must be used to build a deep learning model.</blockquote>
+              <p class="comment-name">&mdash; Abdelrahman Emad</p>
+              <p class="comment-name">&mdash; Ziad Ahmed</p>
+              <p class="comment-name">&mdash; Mohamed Ibrahim</p>
+            </figure>
+
+            <figure class="comment">
+              <div class="team-container">
+                <div class="team-faces">
+                  <img
+                    src="src/img/team/mohamed.jpg"
+                    alt="Customer photo"
+                  />
+                </div>
+              </div>
+              <blockquote class="comment-text">After we collected the data, we preprocessed it and did augmentation techniques. We then started to build the deep learning, we have used Keras for building the model.</blockquote>
+              <p class="comment-name">&mdash; Muhammad Alaa</p>
+            </figure>
+
+            <figure class="comment">
+              <div class="team-container">
+                <div class="team-faces">
+                  <img
+                    src="src/img/team/abdallah.jpg"
+                    alt="Customer photo"
+                  />
+                </div>
+              </div>
+              <blockquote class="comment-text">We managed to reach an accuracy of 94.5% which is higher than all other research we have read. We have tried our model on different types of breast medical images such as Ultrasound and X-Ray and it showed positive results.</blockquote>
+              <p class="comment-name">&mdash; Abdallah Magdy</p>
+            </figure>
+          </div>
+        </div>
+        <div class="viewPDF"></div>
+      </section>
+
+
+      <section id="detection-section" class="section-detection">
+        <div class="container">
+          <span class="subheading">Detection</span>
+          <h2 class="heading-secondary">
+            Use AI to detect breast cancer now!
+          </h2>
+        </div>
+
+        <div class="container">
+          <div class="detection-menu">
+            <header class="detection-header">
+              <p class="detection-name">Detect now</p>
+              <p class="detection-text">Detect whether you have breast cancer or not now by uploading a medical image of your breast.</p>
+              <p class="detection-text">Supported medical images are:</p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-circle"></ion-icon
+                ><span>Ultrasound images</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-circle"></ion-icon
+                ><span>X-Ray images</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close-circle"></ion-icon
+                ><span>MRI images</span>
+              </li>
+            </ul>
+            <div class="plan-btn">
+              <a href="#" class="btn btn--full">Upload image</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="donations-section" class="section-donations">
+        <div class="container">
+          <div class="donations">
+            <div class="donations-text-box">
+              <h2 class="heading-secondary">Your Donation Saves Lives!</h2>
+              <p class="donations-text">
+                Your donation for Baheya Foundation will be a reason for treating a breast cancer patient, and please an entire family, reassure people that they can feel happy and safe one more time, and that will be reflected on your whole life meaning.
+              </p>
+              <a href="https://baheya.org/en/donate" target="_blank" class="btn btn--form">Donate now</a>
+            </div>
+            <div
+              class="donations-img-box"
+              role="img"
+              aria-label="Women supporting each other"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              src="src/img/biogenesis-logo.png"
+              alt="ReditFood Logo"
+              class="logo"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2050</span> by BioGenesis.
+            All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              Faculty of Engineering Cairo University
+            </p>
+            <p>
+              <a class="footer-link" href="tel:+20-120-032-6662">+20-120-032-6662</a>
+              <br />
+              <a class="footer-link" href="abdullah.mahmoud02@eng-st.cu.edu.eg"
+                >abdullah.mahmoud02@eng-st.cu.edu.eg</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/pdfobject@2.2.8/pdfobject.min.js"></script>
+    
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

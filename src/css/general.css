@@ -1,0 +1,244 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font Weigths
+Default: 400
+
+- Line Heights
+  Default: 1
+
+- Font Size System (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing Systems (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+--- 02 COLORS
+Primary: #B1024E
+Tints:
+Shades:
+Accents:
+Greys: #555 
+
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(177, 2, 78, 0.502);
+}
+
+/* General Components */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #c11668;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: #b1024e;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
+}
+
+.btn--full:link,
+.btun--ful:visited {
+  background-color: #b1024e;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #c11668;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #f9e4ee;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #f299c3 !important;
+  color: #f299c3;
+  align-self: end;
+  padding: 1.2rem;
+  width: 50%;
+  text-align: center;
+}
+
+.btn--form:hover {
+  background-color: #fff !important;
+  color: #555b;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 1.2rem;
+  color: #333;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+
+.tag--vegan {
+  background-color: #94d82d;
+}
+
+.tag--paleo {
+  background-color: #ffd43b;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #b1024e;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #c11668;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #b1024e;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.strong {
+  font-weight: 500;
+}
