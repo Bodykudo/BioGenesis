@@ -7,8 +7,6 @@ During the partial differential equations course, we were asked to use PDEs to s
 ---
 
 ### What we have reached so far?
-
-#### Features:
 - 95.2% validation accuracy.
 - 97.1% training accuracy.
 - 0.14 validation loss.
